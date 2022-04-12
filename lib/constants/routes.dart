@@ -1,1 +1,1 @@
-const launchSplashScreen = 'launchsplashscreen/';
+const launchScreenRoute = 'launchsplashscreen/';

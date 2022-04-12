@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: launchSplashScreen,
+      debugShowCheckedModeBanner: false,
+      initialRoute: launchScreenRoute,
       routes: {
-        launchSplashScreen: (context) => LaunchScreen(),
+        launchScreenRoute: (context) => LaunchScreen(),
       },
     );
   }
