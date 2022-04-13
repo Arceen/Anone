@@ -2,20 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
-class LaunchScreen extends StatefulWidget {
+class LaunchScreen extends StatelessWidget {
   const LaunchScreen({Key? key}) : super(key: key);
 
-  @override
-  State<LaunchScreen> createState() => _LaunchScreenState();
-}
-
-class _LaunchScreenState extends State<LaunchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text("Anone"),
+        backgroundColor: const Color(0xFF000000),
+        title: Center(
+          child: AnimatedTextKit(
+            animatedTexts: [
+              ColorizeAnimatedText(
+                'ANone',
+                textStyle: colorizeTextStyle,
+                colors: colorizeColors,
+              ),
+            ],
+            repeatForever: true,
+          ),
         ),
       ),
       bottomNavigationBar: ConvexAppBar(
@@ -33,40 +38,13 @@ class _LaunchScreenState extends State<LaunchScreen> {
 }
 
 const colorizeColors = [
-  Colors.purple,
-  Colors.blue,
-  Colors.yellow,
-  Colors.red,
+  Color(0xFF381E73),
+  Color(0xFF381E73),
+  Color(0xFF5F479B),
+  Color(0xFF381E73),
 ];
 
 const colorizeTextStyle = TextStyle(
-  fontSize: 50.0,
+  fontSize: 30.0,
   fontFamily: 'Horizon',
 );
-
-// return SizedBox(
-//   width: 250.0,
-//   child: AnimatedTextKit(
-//     animatedTexts: [
-//       ColorizeAnimatedText(
-//         'Larry Page',
-//         textStyle: colorizeTextStyle,
-//         colors: colorizeColors,
-//       ),
-//       ColorizeAnimatedText(
-//         'Bill Gates',
-//         textStyle: colorizeTextStyle,
-//         colors: colorizeColors,
-//       ),
-//       ColorizeAnimatedText(
-//         'Steve Jobs',
-//         textStyle: colorizeTextStyle,
-//         colors: colorizeColors,
-//       ),
-//     ],
-//     isRepeatingAnimation: true,
-//     onTap: () {
-//       print("Tap Event");
-//     },
-//   ),
-// );
