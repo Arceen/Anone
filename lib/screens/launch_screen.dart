@@ -10,8 +10,8 @@ class LaunchScreen extends StatefulWidget {
 class _LaunchScreenState extends State<LaunchScreen> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.black54,
+    return SafeArea(
+      child: Center(child: Text("I am me")),
     );
   }
 }

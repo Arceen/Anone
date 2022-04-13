@@ -1,5 +1,6 @@
 import 'package:anone/constants/routes.dart';
 import 'package:anone/screens/launch_screen.dart';
+import 'package:anone/screens/lib_color_schemes.g.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        colorScheme: darkColorScheme,
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: launchScreenRoute,
       routes: {
