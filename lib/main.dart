@@ -1,4 +1,5 @@
 import 'package:anone/constants/routes.dart';
+import 'package:anone/screens/home_screen.dart';
 import 'package:anone/screens/launch_screen.dart';
 import 'package:anone/screens/lib_color_schemes.g.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: launchScreenRoute,
       routes: {
-        launchScreenRoute: (context) => LaunchScreen(),
+        launchScreenRoute: (context) => const LaunchScreen(),
+        homeScreenRoute: (context) => const HomePage(),
       },
     );
   }

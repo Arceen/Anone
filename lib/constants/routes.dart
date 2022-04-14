@@ -1,1 +1,2 @@
-const launchScreenRoute = 'launchsplashscreen/';
+const launchScreenRoute = 'launchscreen/';
+const homeScreenRoute = 'homescreen';
