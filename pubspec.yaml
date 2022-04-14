@@ -45,6 +45,14 @@ dependencies:
   flutter_local_notifications: ^9.4.0
   path_provider: ^2.0.9
   google_fonts: ^2.3.1
+  sound_stream: ^0.3.0
+  connectivity_plus: ^2.3.0
+  flutter_webrtc: ^0.8.5
+  camerawesome: ^0.3.0+1
+  firebase_storage: ^10.2.12
+  video_player: ^2.3.0
+  camera: ^0.9.4+19
+  image_picker: ^0.8.5
 
 dev_dependencies:
   flutter_test:

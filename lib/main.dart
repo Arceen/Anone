@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: launchScreenRoute,
       routes: {
         launchScreenRoute: (context) => const LaunchScreen(),
-        homeScreenRoute: (context) => const HomePage(),
+        homeScreenRoute: (context) => CameraApp(),
       },
     );
   }

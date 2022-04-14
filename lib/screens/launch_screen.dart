@@ -31,6 +31,12 @@ class _LaunchScreenState extends State<LaunchScreen>
     _animationController.forward();
   }
 
+  @override
+  void dispose() {
+    super.dispose();
+    _animationController.dispose();
+  }
+
   void fade() {
     setState(() {
       buttonOpacity = _animationController.value;
